@@ -32,7 +32,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(842, 441);
             this.Name = "form_main";
-            this.Text = "Form1";
+            this.Text = "Pokémon Tools";
             this.ResumeLayout(false);
 
         }

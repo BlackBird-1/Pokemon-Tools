@@ -1,0 +1,12 @@
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\bin\Debug\Pokémon Tools.exe.config
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\bin\Debug\Pokémon Tools.exe
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\bin\Debug\Pokémon Tools.pdb
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon Tools.csprojAssemblyReference.cache
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon_Tools.form_main.resources
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon_Tools.form_weeks.resources
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon_Tools.form_weeksList.resources
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon_Tools.Properties.Resources.resources
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon Tools.csproj.GenerateResource.cache
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon Tools.csproj.CoreCompileInputs.cache
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon Tools.exe
+D:\htdocs\Projetos no Visual Studio\C#\Pokémon Tools\obj\Debug\Pokémon Tools.pdb

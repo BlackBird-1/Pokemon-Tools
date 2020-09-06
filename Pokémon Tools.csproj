@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWeeks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWeeks.Designer.cs">
+      <DependentUpon>FormWeeks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWeeksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWeeksList.Designer.cs">
+      <DependentUpon>FormWeeksList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWeeks.resx">
+      <DependentUpon>FormWeeks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWeeksList.resx">
+      <DependentUpon>FormWeeksList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +97,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Eletric.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Fairy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Fighting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Flying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Ghost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Ice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Poison.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Psychic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Steel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\Teste.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

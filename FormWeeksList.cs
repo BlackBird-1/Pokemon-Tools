@@ -9,15 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pokémon_Tools {
-    public partial class form_main : Form {
-        private form_weeks weeks;
-        private form_weeksList weeksList;
-        public form_main() {
+    public partial class form_weeksList : Form {
+        public form_weeksList() {
             InitializeComponent();
-            weeks=new form_weeks();
-            weeksList=new form_weeksList();
-            weeks.Show();
-            weeksList.Show();
         }
     }
 }

@@ -23,33 +23,14 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.img_type1 = new System.Windows.Forms.PictureBox();
-            this.img_type2 = new System.Windows.Forms.PictureBox();
             this.lbl_mais = new System.Windows.Forms.Label();
             this.cbx_type1 = new System.Windows.Forms.ComboBox();
             this.cbx_type2 = new System.Windows.Forms.ComboBox();
-            this.panel_separador = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.img_type1)).BeginInit();
+            this.img_type2 = new System.Windows.Forms.PictureBox();
+            this.img_type1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_type2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_type1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // img_type1
-            // 
-            this.img_type1.Location = new System.Drawing.Point(12, 12);
-            this.img_type1.Name = "img_type1";
-            this.img_type1.Size = new System.Drawing.Size(80, 80);
-            this.img_type1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_type1.TabIndex = 0;
-            this.img_type1.TabStop = false;
-            // 
-            // img_type2
-            // 
-            this.img_type2.Location = new System.Drawing.Point(286, 12);
-            this.img_type2.Name = "img_type2";
-            this.img_type2.Size = new System.Drawing.Size(80, 80);
-            this.img_type2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img_type2.TabIndex = 1;
-            this.img_type2.TabStop = false;
             // 
             // lbl_mais
             // 
@@ -128,21 +109,31 @@
             this.cbx_type2.TabIndex = 4;
             this.cbx_type2.Text = "Selecionar";
             // 
-            // panel_separador
+            // img_type2
             // 
-            this.panel_separador.BackColor = System.Drawing.Color.White;
-            this.panel_separador.Location = new System.Drawing.Point(6, 137);
-            this.panel_separador.Name = "panel_separador";
-            this.panel_separador.Size = new System.Drawing.Size(366, 3);
-            this.panel_separador.TabIndex = 5;
+            this.img_type2.Location = new System.Drawing.Point(286, 12);
+            this.img_type2.Name = "img_type2";
+            this.img_type2.Size = new System.Drawing.Size(80, 80);
+            this.img_type2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_type2.TabIndex = 1;
+            this.img_type2.TabStop = false;
+            // 
+            // img_type1
+            // 
+            this.img_type1.Image = global::Pokémon_Tools.Properties.Resources.Teste;
+            this.img_type1.Location = new System.Drawing.Point(12, 12);
+            this.img_type1.Name = "img_type1";
+            this.img_type1.Size = new System.Drawing.Size(80, 80);
+            this.img_type1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img_type1.TabIndex = 0;
+            this.img_type1.TabStop = false;
             // 
             // form_weeks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(27)))));
-            this.ClientSize = new System.Drawing.Size(378, 515);
-            this.Controls.Add(this.panel_separador);
+            this.ClientSize = new System.Drawing.Size(378, 141);
             this.Controls.Add(this.cbx_type2);
             this.Controls.Add(this.cbx_type1);
             this.Controls.Add(this.lbl_mais);
@@ -152,8 +143,8 @@
             this.MinimizeBox = false;
             this.Name = "form_weeks";
             this.Text = "Pokémon Weeks";
-            ((System.ComponentModel.ISupportInitialize)(this.img_type1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_type2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_type1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +157,5 @@
         private System.Windows.Forms.Label lbl_mais;
         private System.Windows.Forms.ComboBox cbx_type1;
         private System.Windows.Forms.ComboBox cbx_type2;
-        private System.Windows.Forms.Panel panel_separador;
     }
 }

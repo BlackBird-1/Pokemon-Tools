@@ -183,6 +183,16 @@ namespace Pokémon_Tools.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap None {
+            get {
+                object obj = ResourceManager.GetObject("None", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Normal {
             get {
                 object obj = ResourceManager.GetObject("Normal", resourceCulture);
@@ -226,6 +236,16 @@ namespace Pokémon_Tools.Properties {
         internal static System.Drawing.Bitmap Steel {
             get {
                 object obj = ResourceManager.GetObject("Steel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Teste {
+            get {
+                object obj = ResourceManager.GetObject("Teste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
