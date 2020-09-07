@@ -46,34 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="FormWeak.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="FormWeak.Designer.cs">
+      <DependentUpon>FormWeak.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormWeeks.cs">
+    <Compile Include="FormWeakList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormWeeks.Designer.cs">
-      <DependentUpon>FormWeeks.cs</DependentUpon>
+    <Compile Include="FormWeakList.Designer.cs">
+      <DependentUpon>FormWeakList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormWeeksList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormWeeksList.Designer.cs">
-      <DependentUpon>FormWeeksList.cs</DependentUpon>
-    </Compile>
+    <Compile Include="PokeType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="Strength.cs" />
+    <Compile Include="Weak.cs" />
+    <EmbeddedResource Include="FormWeak.resx">
+      <DependentUpon>FormWeak.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormWeeks.resx">
-      <DependentUpon>FormWeeks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormWeeksList.resx">
-      <DependentUpon>FormWeeksList.cs</DependentUpon>
+    <EmbeddedResource Include="FormWeakList.resx">
+      <DependentUpon>FormWeakList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,6 +151,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pokémon Types\Teste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x1_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pokémon Types\x4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

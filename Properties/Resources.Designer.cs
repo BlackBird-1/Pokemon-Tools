@@ -243,9 +243,9 @@ namespace Pokémon_Tools.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Teste {
+        internal static System.Drawing.Bitmap Water {
             get {
-                object obj = ResourceManager.GetObject("Teste", resourceCulture);
+                object obj = ResourceManager.GetObject("Water", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +253,59 @@ namespace Pokémon_Tools.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Water {
+        internal static System.Drawing.Bitmap x0 {
             get {
-                object obj = ResourceManager.GetObject("Water", resourceCulture);
+                object obj = ResourceManager.GetObject("x0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x1 {
+            get {
+                object obj = ResourceManager.GetObject("x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x1_2 {
+            get {
+                object obj = ResourceManager.GetObject("x1_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x1_4 {
+            get {
+                object obj = ResourceManager.GetObject("x1_4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x2 {
+            get {
+                object obj = ResourceManager.GetObject("x2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x4 {
+            get {
+                object obj = ResourceManager.GetObject("x4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
