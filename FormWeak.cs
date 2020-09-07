@@ -18,7 +18,6 @@ namespace Pokémon_Tools {
         public static PokeType strength;
         public form_weak() {
             InitializeComponent();
-            this.GotFocus += new EventHandler(form_weak_GotFocus); //Quando o form receber foco
 
             weeksList=new form_weakList(this.Width, this.Location.X, this.Location.Y);
             weeksList.Show();
@@ -77,7 +76,8 @@ namespace Pokémon_Tools {
                 for(int i = 0; i<18; i++) {
                     strength.AddEffect(i, Strength.pokeTypes[type].GetEffect(i));
                 }
-            } else { //mode==1 && !unique
+                SetEffect(0, 3, true);
+            } else if(mode != 3) { //mode==1 && !unique
                 SetEffect(cbx_type1.SelectedIndex, 0, true);
 
                 for(int i = 0; i<18; i++) {
@@ -87,8 +87,10 @@ namespace Pokémon_Tools {
                 for(int i = 0; i<18; i++) {
                     strength.AddEffect(i, Strength.pokeTypes[type].GetEffect(i));
                 }
+                
             }
-            form_weakList.SetEffects();
+            form_weakList.setMode(mode); //Seta o modo para controle de botões de vant e fraq
+            form_weakList.SetEffects(); //Seta os efeitos prós e contra
         }
 
         private void PokeType1_SelectedIndexChanged(object sender, EventArgs e) {
@@ -99,13 +101,11 @@ namespace Pokémon_Tools {
                 cbx_type2.SelectedIndex=18;
                 cbx_type2.Enabled=true;
 
-                form_weakList.mode=3;
-                form_weakList.SetEffects();
+                SetEffect(cbx_type1.SelectedIndex, 0, true); //Seta o modo para controle de botões de vant e fraq / Seta os efeitos prós e contra
             } else if(cbx_type1.SelectedIndex==18 & cbx_type2.SelectedIndex==18) { //cbx1 e cbx2 forem None
                 cbx_type2.Enabled=false;
 
-                form_weakList.mode=3;
-                form_weakList.SetEffects();
+                SetEffect(0, 3, true); //Seta o modo para controle de botões de vant e fraq / Seta os efeitos prós e contra
             } else if(cbx_type1.SelectedIndex == cbx_type2.SelectedIndex) { //cbx1 e cbx2 forem iguais
                 cbx_type2.SelectedIndex=18;
                 cbx_type2.Enabled=true;
@@ -123,13 +123,14 @@ namespace Pokémon_Tools {
                 SetEffect(cbx_type1.SelectedIndex, 0, true);
                 cbx_type2.SelectedIndex=18;
                 cbx_type2.Enabled=true;
-            } else if(cbx_type1.SelectedIndex != 18 & cbx_type2.SelectedIndex !=18) {
+            } else if(cbx_type1.SelectedIndex != 18 & cbx_type2.SelectedIndex != 18) {
                 SetEffect(cbx_type1.SelectedIndex, 0, false);
+            }else if(cbx_type1.SelectedIndex!=18 & cbx_type1.SelectedIndex != -1 & cbx_type2.SelectedIndex == 18) {
+                SetEffect(cbx_type1.SelectedIndex, 0, true);
             }
         }
 
         private void form_weak_LocationChanged(object sender, EventArgs e) {
-            Console.WriteLine("X:{0} - y:{1}",this.Location.X,this.Location.Y);
             form_weakList.SetLocation(this.Width, this.Location.X, this.Location.Y);
             form_weakList.staticThis.Focus();
         }
@@ -138,8 +139,9 @@ namespace Pokémon_Tools {
             form_weakList.staticThis.Close();
         }
 
-        private void form_weak_GotFocus(object sender, EventArgs e) { //Quando o form receber foco...
+        private void form_weak_Click(object sender, EventArgs e) {
             form_weakList.staticThis.Focus(); //...Focar também no weakList
+            this.Focus();
         }
     }
 }

@@ -508,7 +508,7 @@
             this.btn_fraq.Name = "btn_fraq";
             this.btn_fraq.Size = new System.Drawing.Size(136, 42);
             this.btn_fraq.TabIndex = 55;
-            this.btn_fraq.Text = "Fraquesas";
+            this.btn_fraq.Text = "Fraquezas";
             this.btn_fraq.UseVisualStyleBackColor = false;
             this.btn_fraq.Click += new System.EventHandler(this.btn_fraq_Click);
             // 
@@ -566,6 +566,7 @@
             this.Controls.Add(this.img_normal);
             this.Controls.Add(this.panel_fundo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "form_weakList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

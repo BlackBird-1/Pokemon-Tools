@@ -148,12 +148,14 @@
             this.Controls.Add(this.img_type2);
             this.Controls.Add(this.img_type1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "form_weak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pokémon Weak";
+            this.Text = "Pokémon Tools";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.form_weak_FormClosed);
             this.LocationChanged += new System.EventHandler(this.form_weak_LocationChanged);
+            this.Click += new System.EventHandler(this.form_weak_Click);
             ((System.ComponentModel.ISupportInitialize)(this.img_type2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_type1)).EndInit();
             this.ResumeLayout(false);

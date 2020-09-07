@@ -15,12 +15,15 @@ namespace Pokémon_Tools {
         private static List<Image> effectImages;
         public static int mode; //Modo de exibição de efeitos (se é vantagens ou fraquezas)
         public static form_weakList staticThis; //Referência static a esse form para o SetLocation()
+        public static List<Button> staticButtons; //Referência static aos botões ( pro setMode() )
         public form_weakList(int width, int x, int y) {
             InitializeComponent();
             staticThis=this;
             SetLocation(width, x, y);
 
             mode=0; //Vantagens
+            staticButtons=new List<Button>();
+            staticButtons.Add(btn_vant); staticButtons.Add(btn_fraq);
 
             effectImages=new List<Image>();
             effectImages.Add(Resources.x0); effectImages.Add(Resources.x1_4); // 0 - 1
@@ -44,6 +47,13 @@ namespace Pokémon_Tools {
             staticThis.Location=new Point(x, y);
         }
 
+        public static void setMode(int noTypes) {
+            if(!staticButtons[0].Enabled) mode=0; //Se botão vantagens não está ativo (ele não ativo significa que o botão clicável se torna o fraquezas)
+            else mode=1;
+
+            if(noTypes == 3) mode=3; //Se passou que não tem tipos selecionados
+        }
+
         public static void SetEffects() {
             int x = 0;
             int pos=0;
@@ -64,23 +74,26 @@ namespace Pokémon_Tools {
             } else { //None
                 foreach(PictureBox v in effectTable) {
                     v.Image=null;
-                    mode=0;
                 }
             }
         }
 
         private void btn_vant_Click(object sender, EventArgs e) {
-            mode=0;
-            SetEffects();
-            btn_fraq.Enabled=true;
-            btn_vant.Enabled=false;
+            if(mode !=3) {
+                mode=0;
+                SetEffects();
+                btn_fraq.Enabled=true;
+                btn_vant.Enabled=false;
+            }
         }
 
         private void btn_fraq_Click(object sender, EventArgs e) {
-            mode=1;
-            SetEffects();
-            btn_vant.Enabled=true;
-            btn_fraq.Enabled=false;
+            if(mode!=3) {
+                mode=1;
+                SetEffects();
+                btn_vant.Enabled=true;
+                btn_fraq.Enabled=false;
+            }
         }
     }
 }
