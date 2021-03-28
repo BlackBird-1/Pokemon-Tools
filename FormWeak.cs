@@ -143,5 +143,9 @@ namespace Pokémon_Tools {
             form_weakList.staticThis.Focus(); //...Focar também no weakList
             this.Focus();
         }
+
+        private void BGWorker_DoWork(object sender, DoWorkEventArgs e) {
+            //???
+        }
     }
 }

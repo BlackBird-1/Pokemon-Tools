@@ -29,6 +29,7 @@
             this.cbx_type2 = new System.Windows.Forms.ComboBox();
             this.img_type2 = new System.Windows.Forms.PictureBox();
             this.img_type1 = new System.Windows.Forms.PictureBox();
+            this.BGWorker = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.img_type2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_type1)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +137,10 @@
             this.img_type1.TabIndex = 0;
             this.img_type1.TabStop = false;
             // 
+            // BGWorker
+            // 
+            this.BGWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BGWorker_DoWork);
+            // 
             // form_weak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,5 +175,6 @@
         private System.Windows.Forms.Label lbl_mais;
         private System.Windows.Forms.ComboBox cbx_type1;
         private System.Windows.Forms.ComboBox cbx_type2;
+        private System.ComponentModel.BackgroundWorker BGWorker;
     }
 }
