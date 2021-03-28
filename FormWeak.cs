@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pokémon_Tools.Properties;
 
@@ -16,8 +12,12 @@ namespace Pokémon_Tools {
         private int[] defaultType = new int[18] { 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 };
         public static PokeType weak;
         public static PokeType strength;
+
+        private FlatComboBox cbx_type1 = new FlatComboBox();
+        private FlatComboBox cbx_type2 = new FlatComboBox();
         public form_weak() {
             InitializeComponent();
+            SetComboBox();
 
             weeksList=new form_weakList(this.Width, this.Location.X, this.Location.Y);
             weeksList.Show();
@@ -42,6 +42,53 @@ namespace Pokémon_Tools {
 
             Weak.SetList();
             Strength.SetList();
+        }
+
+        private void SetComboBox() {
+            // 
+            // cbx_type1
+            // 
+            cbx_type1.BackColor=Color.FromArgb(49, 59, 69);
+            cbx_type1.Cursor=Cursors.Hand;
+            cbx_type1.DropDownStyle=ComboBoxStyle.DropDownList;
+            cbx_type1.FlatStyle=FlatStyle.Flat;
+            cbx_type1.BorderColor=Color.FromArgb(49, 59, 69);
+            cbx_type1.Font=new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbx_type1.ForeColor=Color.White;
+            cbx_type1.FormattingEnabled=true;
+            cbx_type1.Items.AddRange(new object[] {
+            "Normal","Fire","Water","Grass","Eletric","Ice","Fighting",
+            "Poison","Ground","Flying","Psychic","Bug","Rock","Ghost","Dragon",
+            "Dark","Steel","Fairy","None"});
+            cbx_type1.Location=new Point(12, 98);
+            cbx_type1.MaxDropDownItems=18;
+            cbx_type1.Name="cbx_type1";
+            cbx_type1.Size=new Size(138, 30);
+            cbx_type1.TabIndex=3;
+            cbx_type1.SelectedIndexChanged+=new EventHandler(PokeType1_SelectedIndexChanged);
+            this.Controls.Add(cbx_type1);
+            // 
+            // cbx_type2
+            // 
+            cbx_type2.BackColor=Color.FromArgb(49, 59, 69);
+            cbx_type2.Cursor=Cursors.Hand;
+            cbx_type2.Enabled=false;
+            cbx_type2.FlatStyle=FlatStyle.Flat;
+            cbx_type2.BorderColor=Color.FromArgb(49, 59, 69);
+            cbx_type2.Font=new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbx_type2.ForeColor=Color.White;
+            cbx_type2.FormattingEnabled=true;
+            cbx_type2.Items.AddRange(new object[] {
+            "Normal","Fire","Water","Grass","Eletric","Ice","Fighting",
+            "Poison","Ground","Flying","Psychic","Bug","Rock","Ghost","Dragon",
+            "Dark","Steel","Fairy","None"});
+            cbx_type2.Location=new Point(228, 98);
+            cbx_type2.MaxDropDownItems=18;
+            cbx_type2.Name="cbx_type2";
+            cbx_type2.Size=new Size(138, 30);
+            cbx_type2.TabIndex=4;
+            cbx_type2.SelectedIndexChanged+=new EventHandler(PokeType2_SelectedIndexChanged);
+            this.Controls.Add(cbx_type2);
         }
 
         private void SetEffect(int type, int mode, bool unique) {

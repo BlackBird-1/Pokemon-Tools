@@ -64,6 +64,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FlatComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FormWeak.cs">
       <SubType>Form</SubType>
     </Compile>
